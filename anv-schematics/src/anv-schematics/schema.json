@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "$id": "NewRepoSchematic",
+    "title": "ng new options schema",
+    "type": "object",
+    "description": "Initialise a new project",
+    "properties": {
+        "module": {
+            "type": "string",
+            "description": "The name of angular module",
+            "x-prompt": "Module name:",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            }
+        },
+        "action": {
+            "type": "string",
+            "description": "The action type",
+            "x-prompt": "Action:",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            }
+        },
+        "property": {
+            "type": "string",
+            "description": "The name of property",
+            "x-prompt": "Property:",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            }
+        },
+        "payload": {
+            "type": "boolean",
+            "description": "Has payload",
+            "x-prompt": "Has payload:",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            }
+        }
+    }
+}

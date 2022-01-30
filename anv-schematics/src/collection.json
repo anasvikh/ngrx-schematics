@@ -1,0 +1,10 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "add-action": {
+      "description": "A blank schematic.",
+      "factory": "./anv-schematics/index#addAction",
+      "schema": "./anv-schematics/schema.json"
+    }
+  }
+}
