@@ -3,8 +3,8 @@
   "schematics": {
     "add-action": {
       "description": "A blank schematic.",
-      "factory": "./anv-schematics/index#addAction",
-      "schema": "./anv-schematics/schema.json"
+      "factory": "./action/index#addAction",
+      "schema": "./action/schema.json"
     }
   }
 }

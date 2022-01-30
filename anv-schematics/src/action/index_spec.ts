@@ -4,11 +4,11 @@ import * as path from 'path';
 
 const collectionPath = path.join(__dirname, '../collection.json');
 
-describe('anv-schematics', () => {
+describe('action', () => {
   it('works', async () => {
     const runner = new SchematicTestRunner('schematics', collectionPath);
     const tree = await runner
-      .runSchematicAsync('anv-schematics', {}, Tree.empty())
+      .runSchematicAsync('action', {}, Tree.empty())
       .toPromise();
 
     expect(tree.files).toEqual([]);
